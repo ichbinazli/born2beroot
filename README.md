@@ -1,5 +1,5 @@
   SIMPLE SETUP(BASİT KURULUM)
-ufw kontrol --> sudo ufw status
+ufw kontrol --> sudo ufw status /n
 ssh kontrol --> sudo service ssh status
 işletim sistemi kontrol --> uname -a
 
