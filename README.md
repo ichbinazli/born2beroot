@@ -1,4 +1,4 @@
-  SIMPLE SETUP(BASİT KURULUM)
+  <h1>SIMPLE SETUP(BASİT KURULUM)<h1>
 ufw kontrol --> sudo ufw status /n
 ssh kontrol --> sudo service ssh status
 işletim sistemi kontrol --> uname -a
