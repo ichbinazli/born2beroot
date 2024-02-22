@@ -32,6 +32,6 @@
 <p>ssh kontrölü --> sudo service ssh status</p>
 <p>yeni oluşturulan kullanıcı ile ssh kullanma --> <yeni kullanıcı> @localhost -p 4242</p>
 
-  <h2>SCRIP MONITORING<h2>
+  <h2>SCRIP MONITORING</h2>
 <p>monitoring.sh dostasını açmak için --> sudo vim /usr/local/bin/monitoring.sh</p>
 <p>crontab ayarkarını görüntülemek için --> sudo crontab -e</p>
