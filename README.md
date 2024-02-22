@@ -3,35 +3,35 @@
 <p>ssh kontrol --> sudo service ssh status</p>
 <p>işletim sistemi kontrol --> uname -a</p>
 
-  USER(KULLANICI)
-kullanıcı gruplarını kontrol etme --> sudo groups <kullanıcı adı>
-yeni kullanıcı ekleme --> sudo adduser <yeni kullanıcı>
-kullanıcıları listeleme --> less /etc/passwd
-şifreleme politikaları düzenleme --> sudo vim /etc/pam.d/common-password
-grup oluştırma --> sudo groupadd <grup adı>
-gruba kullanıcı ekleme --> sudo adduser <kullanıcı adı> <grup adı>
+  <h2>USER(KULLANICI)</h2>
+<p>kullanıcı gruplarını kontrol etme --> sudo groups <kullanıcı adı></p>
+<p>yeni kullanıcı ekleme --> sudo adduser <yeni kullanıcı></p>
+<p>kullanıcıları listeleme --> less /etc/passwd</p>
+<p>şifreleme politikaları düzenleme --> sudo vim /etc/pam.d/common-password</p>
+<p>grup oluştırma --> sudo groupadd <grup adı></p>
+<p>gruba kullanıcı ekleme --> sudo adduser <kullanıcı adı> <grup adı></p>
 
-  HOSTNAME AND PARTITION(ANA BİLGİSAYAR VE BÖLÜM)
-makine adı kobtrol --> hostnamectl
-makine adı değiştirme --> hostnamectl set-hostname <yeni mak. adı>
-                          sudo reboot
-bölümleri listeleme --> lsblk
+  <h2>HOSTNAME AND PARTITION(ANA BİLGİSAYAR VE BÖLÜM)</h2>
+<p>makine adı kobtrol --> hostnamectl</p>
+<p>makine adı değiştirme --> hostnamectl set-hostname <yeni mak. adı></p>
+                          <p>sudo reboot</p>
+<p>bölümleri listeleme --> lsblk</p>
 
-  SUDO
-sudo kontrolü --> sudo --version
-yeni kullanıcıyı sudo grubuna ekleme --> sudo adduser <yeni kul. adı> sudo
-/var/log/sudo klasöründeki dosya kontrolü --> cd /var/log/sudo
+  <h2>SUDO</h2>
+<p>sudo kontrolü --> sudo --version</p>
+<p>yeni kullanıcıyı sudo grubuna ekleme --> sudo adduser <yeni kul. adı> sudo</p>
+<p>/var/log/sudo klasöründeki dosya kontrolü --> cd /var/log/sudo</p>
 
-  UFW
-ufw kontrölü --> sydo ufw status numbered
-yeni bağlantı noktası ekleme --> sudo ufw allow <port num>
-bağlantı noktasını silme --> sudo ufw status numbered
-                             sudo ufw delete <silmek istediğin port no>
+  <h2>UFW</h2>
+<p>ufw kontrölü --> sydo ufw status numbered</p>
+<p>yeni bağlantı noktası ekleme --> sudo ufw allow <port num> </p>
+<p>bağlantı noktasını silme --> sudo ufw status numbered</p>
+                             sudo ufw delete <silmek istediğin port no></p>
 
-  SSH
-ssh kontrölü --> sudo service ssh status
-yeni oluşturulan kullanıcı ile ssh kullanma --> <yeni kullanıcı> @localhost -p 4242
+  <h2>SSH</h2>
+<p>ssh kontrölü --> sudo service ssh status</p>
+<p>yeni oluşturulan kullanıcı ile ssh kullanma --> <yeni kullanıcı> @localhost -p 4242</p>
 
-  SCRIP MONITORING
-monitoring.sh dostasını açmak için --> sudo vim /usr/local/bin/monitoring.sh
-crontab ayarkarını görüntülemek için --> sudo crontab -e
+  <h2>SCRIP MONITORING
+<p>monitoring.sh dostasını açmak için --> sudo vim /usr/local/bin/monitoring.sh</p>
+<p>crontab ayarkarını görüntülemek için --> sudo crontab -e</p>
