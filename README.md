@@ -1,7 +1,7 @@
-  <h1>SIMPLE SETUP(BASİT KURULUM)<h1>
-ufw kontrol --> sudo ufw status /n
-ssh kontrol --> sudo service ssh status
-işletim sistemi kontrol --> uname -a
+  <h2>SIMPLE SETUP(BASİT KURULUM)</h2>
+<p>ufw kontrol --> sudo ufw status</p>
+<p>ssh kontrol --> sudo service ssh status</p>
+<p>işletim sistemi kontrol --> uname -a</p>
 
   USER(KULLANICI)
 kullanıcı gruplarını kontrol etme --> sudo groups <kullanıcı adı>
