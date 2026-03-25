@@ -1,37 +1,75 @@
-  <h2>SIMPLE SETUP(BASİT KURULUM)</h2>
-<p>ufw kontrol --> sudo ufw status</p>
-<p>ssh kontrol --> sudo service ssh status</p>
-<p>işletim sistemi kontrol --> uname -a</p>
+# 🖥️ B2b
 
-  <h2>USER(KULLANICI)</h2>
-<p>kullanıcı gruplarını kontrol etme --> sudo groups <kullanıcı adı></p>
-<p>yeni kullanıcı ekleme --> sudo adduser <yeni kullanıcı></p>
-<p>kullanıcıları listeleme --> less /etc/passwd</p>
-<p>şifreleme politikaları düzenleme --> sudo vim /etc/pam.d/common-password</p>
-<p>grup oluştırma --> sudo groupadd <grup adı></p>
-<p>gruba kullanıcı ekleme --> sudo adduser <kullanıcı adı> <grup adı></p>
+> Sistem yönetimi ve Linux güvenliği üzerine odaklanan bir proje.
 
-  <h2>HOSTNAME AND PARTITION(ANA BİLGİSAYAR VE BÖLÜM)</h2>
-<p>makine adı kobtrol --> hostnamectl</p>
-<p>makine adı değiştirme --> hostnamectl set-hostname <yeni mak. adı></p>
-                          <p>sudo reboot</p>
-<p>bölümleri listeleme --> lsblk</p>
+---
 
-  <h2>SUDO</h2>
-<p>sudo kontrolü --> sudo --version</p>
-<p>yeni kullanıcıyı sudo grubuna ekleme --> sudo adduser <yeni kul. adı> sudo</p>
-<p>/var/log/sudo klasöründeki dosya kontrolü --> cd /var/log/sudo</p>
+## 🚀 Proje Hakkında
 
-  <h2>UFW</h2>
-<p>ufw kontrölü --> sydo ufw status numbered</p>
-<p>yeni bağlantı noktası ekleme --> sudo ufw allow <port num> </p>
-<p>bağlantı noktasını silme --> sudo ufw status numbered</p>
-                             sudo ufw delete <silmek istediğin port no></p>
+Temel bir Linux sunucusunun kurulması ve yapılandırılması üzerine odaklanır. Amaç:
 
-  <h2>SSH</h2>
-<p>ssh kontrölü --> sudo service ssh status</p>
-<p>yeni oluşturulan kullanıcı ile ssh kullanma --> <yeni kullanıcı> @localhost -p 4242</p>
+* 🔐 Güvenli bir sistem kurmak
+* 🧱 Minimal ve doğru yapılandırma yapmak
+* ⚙️ Sistem servislerini yönetmek
 
-  <h2>SCRIP MONITORING</h2>
-<p>monitoring.sh dostasını açmak için --> sudo vim /usr/local/bin/monitoring.sh</p>
-<p>crontab ayarkarını görüntülemek için --> sudo crontab -e</p>
+---
+
+## 🧱 Kullanılan Teknolojiler
+
+* Debian / CentOS (Linux)
+* VirtualBox
+* Bash
+* System administration tools
+* UFW (Firewall)
+* SSH
+
+---
+
+## ⚙️ Yapılanlar
+
+✔️ Linux sanal makine kurulumu
+✔️ Disk partitioning (LVM)
+✔️ SSH servisi kurulumu
+✔️ Güvenlik politikaları (firewall - UFW)
+✔️ Kullanıcı ve grup yönetimi
+✔️ Şifre politikaları oluşturma
+✔️ Cron ile otomasyon
+
+---
+
+## 🔐 Güvenlik Ayarları
+
+* Root erişimi kısıtlandı
+* SSH sadece belirli port üzerinden açık
+* Firewall ile portlar kontrol edildi
+* Güçlü parola politikaları uygulandı
+
+---
+
+## 📊 İzleme ve Loglama
+
+* Sistem logları takip edildi
+* CPU, RAM kullanımı izlenebilir hale getirildi
+* Cron ile belirli aralıklarla bilgi toplandı
+
+---
+
+## 🧠 Öğrendiklerim
+
+* Linux sistem yönetimi
+* Kullanıcı ve izin yönetimi
+* Ağ ve güvenlik konuları
+* Disk yönetimi ve partition
+* Servis yönetimi
+
+##Disk Yapısı (LVM)
+
+- `/` (root)
+- `/home`
+- `/var`
+- `/srv`
+- `swap`
+
+Bu yapı sayesinde:
+- Disk yönetimi daha esnek olur
+- Genişletme kolaylaşır
